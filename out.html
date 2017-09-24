@@ -1,0 +1,185 @@
+
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <style>
+                #kr2{	background-color: #00ff00	}
+                #kr3{	background-color: #ffff00	}
+                #kr4{	background-color: #ff8000	}
+                #kr5{	background-color: #ff0000	}
+                tr td
+                {
+                        border: 1px solid grey;
+                        height: 80px;
+                        text-align: center;
+                }
+                tr.thead td
+                {
+                        color: white;
+                        text-align: center;
+                        background-color: #57626a;
+                        width: 300px;
+                        height: 40px;
+                }
+                .ea
+                {
+                        border: 1px dashed black;
+                        background-color: #ffaaaa
+                }
+                a
+                {
+                        text-decoration: none
+                }
+
+                h1 {
+                padding: 15px;
+                }
+
+                h2,h3 {
+                padding: 5px;
+                }
+
+                table {
+                padding: 5px;
+                }
+            </style>
+            <script>
+                highlight = function(e) {
+                    /**
+                     * Meghatározom az egyes napokhoz tartozó oszlopok "szélességét" (colspan értékeket)
+                     */
+                    theadChildren = document.getElementsByClassName('thead')[0].children;
+                    theadLens = [];
+                    for (i = 0; i < theadChildren.length; ++i) {
+                            val = parseInt(theadChildren[i].attributes['colspan'].value);
+                            theadLens.push(val);
+                    }
+                    /**
+                     * Kattintott elem sorszámának meghatározása (pontosabban: index száma)
+                     */
+                    parentChildren = e.parentElement.children;
+                    index = 0;
+                    while (index < parentChildren.length) {
+                            if (e == parentChildren[index])
+                                    break;
+                            else
+                                    ++index;
+                            if (index == parentChildren.length)
+                                    index = -1; //nincs tala'lat
+                    }
+                    /**
+                     * Kummulálás a besoroláshoz
+                     */
+                    theadLensKum = [];
+                    for (i = 0; i < theadLens.length; ++i) {
+                            theadLensKum[i] = theadLens[i];
+                            for (j = 0; j < i; ++j)
+                                    theadLensKum[i] += theadLens[j];
+                    }
+                    /**
+                     * Hét napjának indexének a meghatározása (a hét melyik napja alatt van a kattintott mező)
+                     */
+                    theadLenIndex = 0;
+                    while(theadLenIndex < theadLens.length) {
+                            if (index < theadLensKum[theadLenIndex])
+                                    break;
+                            else
+                                    ++theadLenIndex;
+                    }
+                    /**
+                     * Oszlophatárok kijelölése
+                     */
+                    b0 = 0;
+                    b1 = theadLensKum[theadLensKum.length-1];
+                    if (theadLenIndex != 0)
+                            b0 = theadLensKum[theadLenIndex-1];
+                    if (theadLenIndex != theadLens.length-1)
+                            b1 = theadLensKum[theadLenIndex];
+                    /**
+                     * Kijelölt mező szélességének (colspan) módosítása, körülvevők elrejtése
+                     */
+                    newColSpanValue = b1-b0;
+                    if (e.colSpan == newColSpanValue)
+                            newColSpanValue = 1;
+                    for (i = b0; i < b1; ++i) {
+                            current = parentChildren[i];
+                            if (current == e)
+                                    current.colSpan = newColSpanValue;
+                            else {
+                                    newDisplayValue = "none";
+                                    if (current.style.display == newDisplayValue)
+                                            newDisplayValue = "";
+                                    current.style.display = newDisplayValue;
+                            }
+                    }
+                    /*
+                    console.log(index);
+                    console.log(theadLens);
+                    console.log(theadLensKum);
+                    console.log(theadLenIndex);
+                    console.log(b0 + " " + b1);
+                    */
+                }            
+            </script>
+        </head>
+        <body>
+            <table>
+                <tr class="thead"> <td colspan="4">Hétfő</td> 
+<td colspan="5">Kedd</td> 
+<td colspan="6">Szerda</td> 
+<td colspan="5">Csütörtök</td> 
+<td colspan="2">Péntek</td> 
+ </tr> <tr> 
+<td class="gy" id="kr0"onclick="highlight(this)">E-business<br>PGNAMNGI05<br>Dr. Brávácz Ibolya<br>H - 08:00-09:30<br>(D 7 Terem);</td><td class="emp" onclick="highlight(this)"> &empty; </td><td class="emp" onclick="highlight(this)"> &empty; </td><td class="emp" onclick="highlight(this)"> &empty; </td>
+<td class="ea" id="kr0"onclick="highlight(this)">E-business<br>PENAMNGI01<br>Eckert Bálint<br>K - 08:00-09:30<br>(III. Előadó);</td><td class="emp" onclick="highlight(this)"> &empty; </td><td class="emp" onclick="highlight(this)"> &empty; </td><td class="emp" onclick="highlight(this)"> &empty; </td><td class="emp" onclick="highlight(this)"> &empty; </td>
+<td class="gy" id="kr0"onclick="highlight(this)">Programozás alapjai 1<br>PGNAMNGI10<br>Bozó Mária<br>SZE - 08:00-09:30<br>(PC05 Terem);</td><td class="gy" id="kr0"onclick="highlight(this)">Alkalmazott matematika 1<br>PGNAMNGI02<br>Dr. Kovács István Béla<br>SZE - 08:00-09:30<br>(A 302. terem);</td><td class="emp" onclick="highlight(this)"> &empty; </td><td class="emp" onclick="highlight(this)"> &empty; </td><td class="emp" onclick="highlight(this)"> &empty; </td><td class="emp" onclick="highlight(this)"> &empty; </td>
+<td class="ea" id="kr0"onclick="highlight(this)">Adatelemzés, többváltozós adatelemzés 1<br>PENAMNGI01<br>Oroszné dr. Csesznák Anita<br>CS - 08:00-09:30<br>(V. előadó);</td><td class="emp" onclick="highlight(this)"> &empty; </td><td class="emp" onclick="highlight(this)"> &empty; </td><td class="emp" onclick="highlight(this)"> &empty; </td><td class="emp" onclick="highlight(this)"> &empty; </td>
+<td class="ea" id="kr0"onclick="highlight(this)">Vállalati pénzügy 1.<br>PENAMNGI04<br>Szennay Áron<br>P - 08:00-09:30<br>(A Terem);</td><td class="emp" onclick="highlight(this)"> &empty; </td>
+</tr> 
+<tr> 
+<td class="ea" id="kr0"onclick="highlight(this)">Alkalmazott matematika 1<br>PENAMNGI01<br>Dr. Kovács István Béla<br>H - 09:40-11:10<br>(III. Előadó);</td><td class="emp" onclick="highlight(this)"> &empty; </td><td class="emp" onclick="highlight(this)"> &empty; </td><td class="emp" onclick="highlight(this)"> &empty; </td>
+<td class="gy" id="kr0"onclick="highlight(this)">Adatelemzés, többváltozós adatelemzés 1<br>PGNAMNGI03<br>Juhász Imre<br>K - 09:40-11:10<br>(D 8 Terem);</td><td class="gy" id="kr0"onclick="highlight(this)">Alkalmazott matematika 1<br>PGNAMNGI04<br>Dr. Kovács István Béla<br>K - 09:40-11:10<br>(A 205 Terem);</td><td class="gy" id="kr0"onclick="highlight(this)">E-business<br>PGNAMNGI02<br>Eckert Bálint<br>K - 09:40-11:10<br>(D 7 Terem);</td><td class="emp" onclick="highlight(this)"> &empty; </td><td class="emp" onclick="highlight(this)"> &empty; </td>
+<td class="gy" id="kr0"onclick="highlight(this)">Programozás alapjai 1<br>PGNAMNGI11<br>Bozó Mária<br>SZE - 09:40-11:10<br>(PC05 Terem);</td><td class="gy" id="kr0"onclick="highlight(this)">Programozás alapjai 1<br>PGNAMNGI01<br>Dr. Fauszt Tibor<br>SZE - 09:40-11:10<br>(PC03 Terem);</td><td class="gy" id="kr0"onclick="highlight(this)">Alkalmazott matematika 1<br>PGNAMNGI05<br>Dr. Kovács István Béla<br>SZE - 09:40-11:10<br>(A 302. terem);</td><td class="gy" id="kr0"onclick="highlight(this)">E-business<br>PGNAMNGI03<br>Eckert Bálint<br>SZE - 09:40-11:10<br>(D 7 Terem);</td><td class="emp" onclick="highlight(this)"> &empty; </td><td class="emp" onclick="highlight(this)"> &empty; </td>
+<td class="ea" id="kr0"onclick="highlight(this)">Vállalati pénzügy 1.<br>PENAMNGI10<br>Csoma Róbert<br>CS - 09:40-11:10<br>(G Terem);</td><td class="gy" id="kr0"onclick="highlight(this)">Programozás alapjai 1<br>PGNAMNGI13<br>Bozó Mária<br>CS - 09:40-11:10<br>(PC05 Terem);</td><td class="gy" id="kr0"onclick="highlight(this)">Alkalmazott matematika 1<br>PGNAMNGI08<br>Dr. Baják Szabolcs<br>CS - 09:40-11:10<br>(A 303. terem);</td><td class="emp" onclick="highlight(this)"> &empty; </td><td class="emp" onclick="highlight(this)"> &empty; </td>
+<td class="gy" id="kr0"onclick="highlight(this)">Vállalati pénzügy 1.<br>PGNAMNGI04<br>Szennay Áron<br>P - 09:40-10:25<br>(A Terem);</td><td class="emp" onclick="highlight(this)"> &empty; </td>
+</tr> 
+<tr> 
+<td class="gy" id="kr0"onclick="highlight(this)">Adatelemzés, többváltozós adatelemzés 1<br>PGNAMNGI12<br>Simon András<br>H - 11:20-12:50<br>(A 204 Terem);</td><td class="gy" id="kr0"onclick="highlight(this)">Alkalmazott matematika 1<br>PGNAMNGI03<br>Dr. Kovács István Béla<br>H - 11:20-12:50<br>(A 208 Terem);</td><td class="gy" id="kr0"onclick="highlight(this)">E-business<br>PGNAMNGI04<br>Eckert Bálint<br>H - 11:20-12:50<br>(D 7 Terem);</td><td class="emp" onclick="highlight(this)"> &empty; </td>
+<td class="ea" id="kr0"onclick="highlight(this)">﻿Vállalati pénzügy 1.<br>PENAMNGI01<br>Barna Éva<br>K - 11:20-12:50<br>(A 201 Terem);</td><td class="ea" id="kr0"onclick="highlight(this)">Vállalati pénzügy 1.<br>PENAMNGI06<br>Dr. Nagy Gyula<br>K - 11:20-12:50<br>(A 04. terem);</td><td class="gy" id="kr0"onclick="highlight(this)">Adatelemzés, többváltozós adatelemzés 1<br>PGNAMNGI02<br>Juhász Imre<br>K - 11:20-12:50<br>(D 8 Terem);</td><td class="gy" id="kr0"onclick="highlight(this)">Alkalmazott matematika 1<br>PGNAMNGI01<br>Dr. Kovács István Béla<br>K - 11:20-12:50<br>(A 205 Terem);</td><td class="emp" onclick="highlight(this)"> &empty; </td>
+<td class="ea" id="kr0"onclick="highlight(this)">Programozás alapjai 1<br>PENAMNGI01<br>Dr. Fauszt Tibor<br>SZE - 11:20-12:50<br>(III. Előadó);</td><td class="emp" onclick="highlight(this)"> &empty; </td><td class="emp" onclick="highlight(this)"> &empty; </td><td class="emp" onclick="highlight(this)"> &empty; </td><td class="emp" onclick="highlight(this)"> &empty; </td><td class="emp" onclick="highlight(this)"> &empty; </td>
+<td class="gy" id="kr0"onclick="highlight(this)">Vállalati pénzügy 1.<br>PGNAMNGI10<br>Csoma Róbert<br>CS - 11:20-12:05<br>(G Terem);</td><td class="gy" id="kr0"onclick="highlight(this)">Adatelemzés, többváltozós adatelemzés 1<br>PGNAMNGI07<br>Juhász Imre<br>CS - 11:20-12:50<br>(PC06 Terem);</td><td class="gy" id="kr0"onclick="highlight(this)">Programozás alapjai 1<br>PGNAMNGI09<br>Bozó Mária<br>CS - 11:20-12:50<br>(PC05 Terem);</td><td class="gy" id="kr0"onclick="highlight(this)">Alkalmazott matematika 1<br>PGNAMNGI07<br>Dr. Baják Szabolcs<br>CS - 11:20-12:50<br>(A 303. terem);</td><td class="emp" onclick="highlight(this)"> &empty; </td>
+<td class="ea" id="kr0"onclick="highlight(this)">Vállalati pénzügy 1.<br>PENAMNGI08<br>Rékasi Róbert<br>P - 11:20-12:50<br>(D 5 Terem);</td><td class="emp" onclick="highlight(this)"> &empty; </td>
+</tr> 
+<tr> 
+<td class="ea" id="kr0"onclick="highlight(this)">Vállalati pénzügy 1.<br>PENAMNGI05<br>Dr. Nagy Gyula<br>H - 13:45-15:25<br>(A 302. terem);</td><td class="gy" id="kr0"onclick="highlight(this)">Adatelemzés, többváltozós adatelemzés 1<br>PGNAMNGI11<br>Simon András<br>H - 13:00-14:30<br>(A 204 Terem);</td><td class="gy" id="kr0"onclick="highlight(this)">Alkalmazott matematika 1<br>PGNAMNGI06<br>Dr. Baják Szabolcs<br>H - 13:00-14:30<br>(A 301. terem);</td><td class="emp" onclick="highlight(this)"> &empty; </td>
+<td class="gy" id="kr0"onclick="highlight(this)">Vállalati pénzügy 1.<br>PGNAMNGI01<br>Barna Éva<br>K - 13:00-13:45<br>(A 201 Terem);</td><td class="gy" id="kr0"onclick="highlight(this)">Vállalati pénzügy 1.<br>PGNAMNGI06<br>Dr. Nagy Gyula<br>K - 13:00-13:45<br>(A 04. terem);</td><td class="gy" id="kr0"onclick="highlight(this)">Adatelemzés, többváltozós adatelemzés 1<br>PGNAMNGI01<br>Juhász Imre<br>K - 13:00-14:30<br>(D 7 Terem);</td><td class="emp" onclick="highlight(this)"> &empty; </td><td class="emp" onclick="highlight(this)"> &empty; </td>
+<td class="ea" id="kr0"onclick="highlight(this)">Vállalati pénzügy 1.<br>PENAMNGI02<br>Barna Éva<br>SZE - 13:00-14:30<br>(G Terem);</td><td class="ea" id="kr0"onclick="highlight(this)">Vállalati pénzügy 1.<br>PENAMNGI03<br>Szennay Áron<br>SZE - 13:00-14:30<br>(A 04. terem);</td><td class="gy" id="kr0"onclick="highlight(this)">Adatelemzés, többváltozós adatelemzés 1<br>PGNAMNGI06<br>Juhász Imre<br>SZE - 13:00-14:30<br>(PC02 Terem);</td><td class="gy" id="kr0"onclick="highlight(this)">Programozás alapjai 1<br>PGNAMNGI03<br>Dr. Fauszt Tibor<br>SZE - 13:00-14:30<br>(PC05 Terem);</td><td class="gy" id="kr0"onclick="highlight(this)">Programozás alapjai 1<br>PGNAMNGI06<br>Bozó Mária<br>SZE - 13:00-14:30<br>(PC09 Terem);</td><td class="emp" onclick="highlight(this)"> &empty; </td>
+<td class="ea" id="kr0"onclick="highlight(this)">Vállalati pénzügy 1.<br>PENAMNGI07<br>Csoma Róbert<br>CS - 13:00-14:30<br>(G Terem);</td><td class="gy" id="kr0"onclick="highlight(this)">Adatelemzés, többváltozós adatelemzés 1<br>PGNAMNGI09<br>Juhász Imre<br>CS - 13:00-14:30<br>(PC02 Terem);</td><td class="gy" id="kr0"onclick="highlight(this)">Programozás alapjai 1<br>PGNAMNGI08<br>Bozó Mária<br>CS - 13:00-14:30<br>(PC05 Terem);</td><td class="emp" onclick="highlight(this)"> &empty; </td><td class="emp" onclick="highlight(this)"> &empty; </td>
+<td class="gy" id="kr0"onclick="highlight(this)">Vállalati pénzügy 1.<br>PGNAMNGI08<br>Rékasi Róbert<br>P - 13:00-13:45<br>(D 5 Terem);</td><td class="emp" onclick="highlight(this)"> &empty; </td>
+</tr> 
+<tr> 
+<td class="gy" id="kr0"onclick="highlight(this)">Vállalati pénzügy 1.<br>PGNAMNGI05<br>Dr. Nagy Gyula<br>H - 15:25-16:10<br>(A 302. terem);</td><td class="gy" id="kr0"onclick="highlight(this)">Adatelemzés, többváltozós adatelemzés 1<br>PGNAMNGI13<br>Simon András<br>H - 14:40-16:10<br>(A 204 Terem);</td><td class="emp" onclick="highlight(this)"> &empty; </td><td class="emp" onclick="highlight(this)"> &empty; </td>
+<td class="ea" id="kr0"onclick="highlight(this)">Szervezeti magatartás és vezetés<br>PENAMNGI01<br>Dr. Szászvári Karina Ágnes<br>K - 14:40-16:10<br>(V. előadó);</td><td class="emp" onclick="highlight(this)"> &empty; </td><td class="emp" onclick="highlight(this)"> &empty; </td><td class="emp" onclick="highlight(this)"> &empty; </td><td class="emp" onclick="highlight(this)"> &empty; </td>
+<td class="gy" id="kr0"onclick="highlight(this)">Vállalati pénzügy 1.<br>PGNAMNGI03<br>Szennay Áron<br>SZE - 14:40-15:25<br>(A 04. terem);</td><td class="gy" id="kr0"onclick="highlight(this)">Vállalati pénzügy 1.<br>PGNAMNGI02<br>Barna Éva<br>SZE - 14:40-15:25<br>(G Terem);</td><td class="gy" id="kr0"onclick="highlight(this)">Adatelemzés, többváltozós adatelemzés 1<br>PGNAMNGI04<br>Juhász Imre<br>SZE - 14:40-16:10<br>(PC02 Terem);</td><td class="gy" id="kr0"onclick="highlight(this)">Programozás alapjai 1<br>PGNAMNGI04<br>Dr. Fauszt Tibor<br>SZE - 14:40-16:10<br>(PC05 Terem);</td><td class="gy" id="kr0"onclick="highlight(this)">Programozás alapjai 1<br>PGNAMNGI05<br>Bozó Mária<br>SZE - 14:40-16:10<br>(PC09 Terem);</td><td class="emp" onclick="highlight(this)"> &empty; </td>
+<td class="gy" id="kr0"onclick="highlight(this)">Vállalati pénzügy 1.<br>PGNAMNGI07<br>Csoma Róbert<br>CS - 14:40-15:25<br>(G Terem);</td><td class="gy" id="kr0"onclick="highlight(this)">Adatelemzés, többváltozós adatelemzés 1<br>PGNAMNGI08<br>Juhász Imre<br>CS - 14:40-16:10<br>(PC02 Terem);</td><td class="gy" id="kr0"onclick="highlight(this)">E-business<br>PGNAMNGI06<br>Dr. Brávácz Ibolya<br>CS - 14:40-16:10<br>(D 7 Terem);</td><td class="gy" id="kr0"onclick="highlight(this)">E-business<br>PGNAMNGI07<br>Dr. Brávácz Ibolya<br>CS - 14:40-16:10<br>(D 7 Terem);</td><td class="emp" onclick="highlight(this)"> &empty; </td>
+<td class="emp" onclick="highlight(this)"> &empty; </td><td class="emp" onclick="highlight(this)"> &empty; </td>
+</tr> 
+<tr> 
+<td class="gy" id="kr0"onclick="highlight(this)">E-business<br>PGNAMNGI01<br>Eckert Bálint<br>H - 16:20-17:50<br>(D 8 Terem);</td><td class="emp" onclick="highlight(this)"> &empty; </td><td class="emp" onclick="highlight(this)"> &empty; </td><td class="emp" onclick="highlight(this)"> &empty; </td>
+<td class="ea" id="kr0"onclick="highlight(this)">Vállalati pénzügy 1.<br>PENAMNGI09<br>Rékasi Róbert<br>K - 16:20-17:50<br>(A 205 Terem);</td><td class="gy" id="kr0"onclick="highlight(this)">Adatelemzés, többváltozós adatelemzés 1<br>PGNAMNGI10<br>Juhász Imre<br>K - 16:20-17:50<br>(PC03 Terem);</td><td class="gy" id="kr0"onclick="highlight(this)">Programozás alapjai 1<br>PGNAMNGI07<br>Bozó Mária<br>K - 16:20-17:50<br>(PC05 Terem);</td><td class="emp" onclick="highlight(this)"> &empty; </td><td class="emp" onclick="highlight(this)"> &empty; </td>
+<td class="gy" id="kr0"onclick="highlight(this)">Adatelemzés, többváltozós adatelemzés 1<br>PGNAMNGI05<br>Juhász Imre<br>SZE - 16:20-17:50<br>(PC02 Terem);</td><td class="gy" id="kr0"onclick="highlight(this)">Programozás alapjai 1<br>PGNAMNGI02<br>Dr. Fauszt Tibor<br>SZE - 16:20-17:50<br>(PC05 Terem);</td><td class="emp" onclick="highlight(this)"> &empty; </td><td class="emp" onclick="highlight(this)"> &empty; </td><td class="emp" onclick="highlight(this)"> &empty; </td><td class="emp" onclick="highlight(this)"> &empty; </td>
+<td class="ea" id="kr0"onclick="highlight(this)">Vállalati pénzügy 1.<br>PENAMNGI12<br>Urbanics Roxána<br>CS - 16:20-17:50<br>(A 303. terem);</td><td class="gy" id="kr0"onclick="highlight(this)">E-business<br>PGNAMNGI08<br>Dr. Brávácz Ibolya<br>CS - 16:20-17:50<br>(D 7 Terem);</td><td class="emp" onclick="highlight(this)"> &empty; </td><td class="emp" onclick="highlight(this)"> &empty; </td><td class="emp" onclick="highlight(this)"> &empty; </td>
+<td class="emp" onclick="highlight(this)"> &empty; </td><td class="emp" onclick="highlight(this)"> &empty; </td>
+</tr> 
+<tr> 
+<td class="emp" onclick="highlight(this)"> &empty; </td><td class="emp" onclick="highlight(this)"> &empty; </td><td class="emp" onclick="highlight(this)"> &empty; </td><td class="emp" onclick="highlight(this)"> &empty; </td>
+<td class="gy" id="kr0"onclick="highlight(this)">Vállalati pénzügy 1.<br>PGNAMNGI09<br>Rékasi Róbert<br>K - 18:00-18:45<br>(A 205 Terem);</td><td class="gy" id="kr0"onclick="highlight(this)">Programozás alapjai 1<br>PGNAMNGI12<br>Bozó Mária<br>K - 18:00-19:30<br>(PC05 Terem);</td><td class="gy" id="kr0"onclick="highlight(this)">Programozás alapjai 1<br>PGNAMNGI14<br>Bozó Mária<br>K - 19:40-21:10<br>(PC05 Terem);</td><td class="emp" onclick="highlight(this)"> &empty; </td><td class="emp" onclick="highlight(this)"> &empty; </td>
+<td class="emp" onclick="highlight(this)"> &empty; </td><td class="emp" onclick="highlight(this)"> &empty; </td><td class="emp" onclick="highlight(this)"> &empty; </td><td class="emp" onclick="highlight(this)"> &empty; </td><td class="emp" onclick="highlight(this)"> &empty; </td><td class="emp" onclick="highlight(this)"> &empty; </td>
+<td class="gy" id="kr0"onclick="highlight(this)">Vállalati pénzügy 1.<br>PGNAMNGI12<br>Urbanics Roxána<br>CS - 18:00-18:45<br>(A 303. terem);</td><td class="emp" onclick="highlight(this)"> &empty; </td><td class="emp" onclick="highlight(this)"> &empty; </td><td class="emp" onclick="highlight(this)"> &empty; </td><td class="emp" onclick="highlight(this)"> &empty; </td>
+<td class="emp" onclick="highlight(this)"> &empty; </td><td class="emp" onclick="highlight(this)"> &empty; </td>
+</tr> 
+
+            </table>
+        </body>
+    </html>
+    

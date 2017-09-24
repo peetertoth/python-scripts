@@ -1,0 +1,111 @@
+Számvitel 2$PGNAMNGI09$gy$Szabó Szabolcs$SZE$09:40-11:10$(C Terem);
+Számvitel 2$PGNAMNGI04$gy$Almási Bálint Zsolt$K$14:40-16:10$(A 301. terem);
+Számvitel 2$PENAMNGI01$ea$Dr. Veress Attila$K$09:40-11:10$(III. Előadó); K:09:40-11:10 (III. Előadó);
+Számvitel 2$PGNAMNGI05$gy$Zatykó Zsuzsanna$H$16:20-17:50$(A 201 Terem);
+Számvitel 2$PGNAMNGI01$gy$Dr. Borzán Anita$H$13:00-14:30$(A 207. terem);
+Számvitel 2$PGNAMNGI03$gy$Almási Bálint Zsolt$H$13:00-14:30$(A 206 Terem);
+Számvitel 2$PGNAMNGI02$gy$Dr. Borzán Anita$H$11:20-12:50$(H Terem);
+Számvitel 2$PGNAMNGI08$gy$Dr. Borzán Anita$H$09:40-11:10$(B Terem);
+Számvitel 2$PGNAMNGI06$gy$Zatykó Zsuzsanna$CS$18:00-19:30$(A 201 Terem);
+Számvitel 2$PGNAMNGI07$gy$Zatykó Zsuzsanna$CS$16:20-17:50$(A 302. terem);
+Általános statisztika 1$PGNAMNGI08$gy$Héderné Bertók Judit$SZE$13:00-14:30$(C Terem);
+Általános statisztika 1$PGNAMNGI11$gy$Ország Gáborné, Dr. Márkus Gáborné$SZE$11:20-12:50$(C Terem);
+Általános statisztika 1$PGNAMNGI13$gy$Dr. Márkus Gáborné$H$09:40-11:10$(D 8 Terem);
+Általános statisztika 1$PGNAMNGI01$gy$Fördős Fanni$H$09:40-11:10$(A 302. terem);
+Általános statisztika 1$PGNAMNGI03$gy$Fördős Fanni, Szobonya Réka$H$08:00-09:30$(A 302. terem);
+Általános statisztika 1$PGNAMNGI07$gy$Fördős Fanni$CS$16:20-17:50$(A 208 Terem);
+Általános statisztika 1$PGNAMNGI05$gy$Héderné Bertók Judit$CS$16:20-17:50$(A 201 Terem);
+Általános statisztika 1$PGNAMNGI04$gy$Héderné Bertók Judit$CS$14:40-16:10$(A 201 Terem);
+Általános statisztika 1$PGNAMNGI06$gy$Fördős Fanni$CS$09:40-11:10$(A 302. terem);
+Általános statisztika 1$PGNAMNGI12$gy$Fördős Fanni$CS$08:00-09:30$(F Terem);
+Adatbázisrendszerek$PGNAMNGI10$gy$Mészáros György$SZE$14:40-16:10$(A 204 Terem);
+Adatbázisrendszerek$PGNAMNGI09$gy$Mészáros György$SZE$11:20-12:50$(PC10 Terem);
+Adatbázisrendszerek$PGNAMNGI08$gy$Mészáros György$SZE$09:40-11:10$(PC10 Terem);
+Adatbázisrendszerek$PGNAMNGI07$gy$Mészáros György$SZE$08:00-09:30$(PC01 Terem);
+Adatbázisrendszerek$PGNAMNGI03$gy$Hua Nam Son$K$11:20-12:50$(PC10 Terem);
+Adatbázisrendszerek$PGNAMNGI02$gy$Hua Nam Son$H$09:40-11:10$(PC02 Terem);
+Adatbázisrendszerek$PGNAMNGI01$gy$Hua Nam Son$H$08:00-09:30$(PC02 Terem);
+Adatbázisrendszerek$PGNAMNGI04$gy$Hua Nam Son$CS$14:40-16:10$(PC10 Terem);
+Adatbázisrendszerek$PENAMNGI01$ea$Hua Nam Son$CS$13:00-14:30$(V. előadó);
+Adatbázisrendszerek$PGNAMNGI06$gy$Bozó Mária$CS$09:40-11:10$(PC10 Terem);
+Adatbázisrendszerek$PGNAMNGI05$gy$Bozó Mária$CS$08:00-09:30$(PC10 Terem);
+Irodai automatizálás 2$PGNAMNGI08$gy$Arany Zoltán$SZE$16:20-17:50$(D 8 Terem);
+Irodai automatizálás 2$PGNAMNGI10$gy$Arany Zoltán$SZE$14:40-16:10$(D 8 Terem);
+Irodai automatizálás 2$PGNAMNGI07$gy$Arany Zoltán$SZE$13:00-14:30$(PC02 Terem);
+Irodai automatizálás 2$PGNAMNGI06$gy$Kaderják Gyula Attila$K$16:20-17:50$(PC10 Terem);
+Irodai automatizálás 2$PGNAMNGI03$gy$Kaderják Gyula Attila$K$14:40-16:10$(PC10 Terem);
+Irodai automatizálás 2$PGNAMNGI05$gy$Kaderják Gyula Attila$K$13:00-14:30$(PC10 Terem);
+Irodai automatizálás 2$PGNAMNGI04$gy$Kaderják Gyula Attila$K$11:20-12:50$(PC06 Terem);
+Irodai automatizálás 2$PGNAMNGI09$gy$Kaderják Gyula Attila$H$13:00-14:30$(D 8 Terem);
+Irodai automatizálás 2$PGNAMNGI02$gy$Kaderják Gyula Attila$H$09:40-11:10$(PC10 Terem);
+Irodai automatizálás 2$PGNAMNGI01$gy$Kaderják Gyula Attila$H$08:00-09:30$(PC06 Terem);
+Testnevelés 2$PGNAMN_KOSÁRLABDA_EDZÉS$gy$Szörényi Zoltán Tamás$SZE$18:00-19:30;$ 
+Testnevelés 2$PGNAMN_ASZTALITENISZ_02$gy$Szörényi Zoltán Tamás$SZE$16:30-17:50;$ 
+Testnevelés 2$PGNAMN_TENISZ/KONDI_01$gy$Tóth Ottó$SZE$16:20-17:50;$ 
+Testnevelés 2$PGNAMN_AEROBIC_02$gy$Rádi Mónika$SZE$16:20-17:50;$ 
+Testnevelés 2$PGNAMN_KONDI$gy$Tóth Ottó$SZE$16:20-17:50;$ 
+Testnevelés 2$PGNAMN_FLOORBAL_02$gy$Tóth Ottó$SZE$14:40-16:10;$ 
+Testnevelés 2$PGNAMN_RÖPLABDA_04$gy$Tóth Ottó$SZE$13:00-14:30;$ 
+Testnevelés 2$PGNAMN_ÚSZÁS_02$gy$Szörényi Zoltán Tamás$SZE$12:10-13:45;$ 
+Testnevelés 2$PGNAMN_KONDI_SXL_01$gy$Klinkó Attila$SZE$10:00-11:10;$ 
+Testnevelés 2$PGNAMN_RÖPLABDA_03$gy$Szörényi Zoltán Tamás$SZE$09:40-11:10;$ 
+Testnevelés 2$PGNAMN_FOCI_05$gy$Szörényi Zoltán Tamás$SZE$08:00-09:30;$ 
+Testnevelés 2$PGNAMN_RÖPLABDA_EDZÉS$gy$Klinkó Attila$P$14:40-16:10;$ 
+Testnevelés 2$PGNAMN_KOSÁRLABDA_04$gy$Klinkó Attila$P$13:00-14:30;$ 
+Testnevelés 2$PGNAMN_FOCI_09$gy$Klinkó Attila$P$11:20-12:50;$ 
+Testnevelés 2$PGNAMN_KOSÁRLABDA_02$gy$Klinkó Attila$H$14:40-16:10;$ 
+Testnevelés 2$PGNAMN_FOCI_02$gy$Klinkó Attila$H$13:00-14:30;$ 
+Testnevelés 2$PGNAMN_KOSÁRLABDA_01$gy$Szörényi Zoltán Tamás$H$11:20-12:50;$ 
+Testnevelés 2$PGNAMN_FOCI_01$gy$Szörényi Zoltán Tamás$H$09:40-11:10;$ 
+Testnevelés 2$PGNAMN_RÖPLABDA_01$gy$Szörényi Zoltán Tamás$H$08:00-09:30;$ 
+Testnevelés 2$PGNAMN_FOCI_EDZÉS$gy$Tóth Ottó$CS$18:00-19:30;$ 
+Testnevelés 2$PGNAMN_ZUMBA_02$gy$Tóth Zsuzsanna$CS$16:20-17:50;$ 
+Testnevelés 2$PGNAMN_TENISZ/KONDI_02$gy$Tóth Ottó$CS$14:40-16:10;$ 
+Testnevelés 2$PGNAMN_RÖPLABDA_06$gy$Szörényi Zoltán Tamás$CS$13:00-14:30;$ 
+Testnevelés 2$PGNAMN_TENISZ_02$gy$Tóth Ottó$CS$12:10-13:45;$ 
+Testnevelés 2$PGNAMN_FOCI_07$gy$Szörényi Zoltán Tamás$CS$11:20-12:50;$ 
+Testnevelés 2$PGNAMN_KONDI_SXL_02$gy$Klinkó Attila$CS$10:00-11:10;$ 
+Testnevelés 2$PGNAMN_ASZTALITENISZ_03$gy$Tóth Ottó$CS$09:40-11:10;$ 
+Testnevelés 2$PGNAMN_RÖPLABDA_05$gy$Tóth Ottó$CS$08:00-09:30;$ 
+Integrációs ismeretek$PENAMNGI04$ea$Halm Tamás$P$09:40-11:10$(D 9 Terem);
+Integrációs ismeretek$PENAMNGI03$ea$Halm Tamás$P$08:00-09:30$(D 9 Terem);
+Integrációs ismeretek$PENAMNGI02$ea$Dr. Engelberth István$H$09:40-11:10$(D 9 Terem);
+Integrációs ismeretek$PENAMNGI01$ea$Dr. Engelberth István$H$08:00-09:30$(D 9 Terem);
+Integrációs ismeretek$PENAMNGI05$ea$Halm Tamás$CS$14:40-16:10$(G Terem);
+Matematikai alapok 2$PVNAMVGI01$ea$Kollár Judit, Dr. Horváth Gábor$$$
+Matematikai alapok 2$PGNAMNGI04$gy$Dr. Molnár István$SZE$11:20-12:50$(G Terem);
+Matematikai alapok 2$PGNAMNGI07$gy$Dr. Molnár István$SZE$09:40-11:10$(I. Előadó);
+Matematikai alapok 2$PGNAMNGI06$gy$Dr. Molnár István$K$16:20-17:50$(C Terem);
+Matematikai alapok 2$PGNAMNGI01$gy$Dr. Molnár István$K$14:40-16:10$(D 9 Terem);
+Matematikai alapok 2$PGNAMNGI05$gy$Szakál Szilvia$K$13:00-14:30$(E Terem);
+Matematikai alapok 2$PENAMNGI01$ea$Kollár Judit$K$08:00-09:30$(II. Előadó);
+Matematikai alapok 2$PGNAMNGI03$gy$Dr. Molnár Sándor$H$14:40-16:10$(C Terem);
+Matematikai alapok 2$PGNAMNGI02$gy$Kollár Judit$CS$14:40-16:10$(A Terem);
+Pénzügyek$PGNMANGI11$gy$Rékasi Róbert$SZE$14:40-16:10$(A 301. terem);
+Pénzügyek$PGNMANGI10$gy$Hegedűs Szilárd$SZE$13:00-14:30$(D Terem);
+Pénzügyek$PGNMANGI02$gy$Dr. Zsugyel János István$SZE$13:00-14:30$(A 201 Terem);
+Pénzügyek$PGNMANGI03$gy$Dr. Zsugyel János István$SZE$11:20-12:50$(A 201 Terem);
+Pénzügyek$PGNMANGI08$gy$Dr Mérő Katalin$P$13:00-14:30$(A 301. terem);
+Pénzügyek$PENMANGI01$ea$Dr. Nagy Gyula$H$14:40-16:10$(III. Előadó);
+Pénzügyek$PGNMANGI06$gy$Dr. Zsugyel János István$CS$16:20-17:50$(A 301. terem);
+Pénzügyek$PGNMANGI09$gy$Dr Mérő Katalin$CS$14:40-16:10$(D 6 Terem);
+Pénzügyek$PGNMANGI05$gy$Dr. Zsugyel János István$CS$14:40-16:10$(A 303. terem);
+Pénzügyek$PGNMANGI07$gy$Dr. Zsugyel János István$CS$14:40-16:10$(A 303. terem);
+Pénzügyek$PGNMANGI04$gy$Dr. Zsugyel János István$CS$11:20-12:50$(A 205 Terem);
+Számítógép és hálózati architektura 2$PGNAMNGI12$gy$Nemes Teréz Erzsébet$SZE$15:30-16:10$(PC07 Terem); SZE:16:20-17:05 (PC07 Terem);
+Számítógép és hálózati architektura 2$PENAMNGI12$ea$Nemes Teréz Erzsébet$SZE$14:40-15:25$(PC07 Terem);
+Számítógép és hálózati architektura 2$PGNAMNGI04$gy$Nemes Teréz Erzsébet$SZE$11:20-12:05$(PC07 Terem); SZE:12:10-12:50 (PC07 Terem);
+Számítógép és hálózati architektura 2$PGNAMNGI11$gy$Török Péter$SZE$11:20-12:05$(PC03 Terem); SZE:12:10-12:50 (PC03 Terem);
+Számítógép és hálózati architektura 2$PENAMNGI04$ea$Nemes Teréz Erzsébet$SZE$10:30-11:10$(PC07 Terem);
+Számítógép és hálózati architektura 2$PENAMNGI11$ea$Török Péter$SZE$10:30-11:10$(PC03 Terem);
+Számítógép és hálózati architektura 2$PGNAMNGI05$gy$Nemes Teréz Erzsébet$SZE$08:50-09:30$(PC07 Terem); SZE:09:40-10:25 (PC07 Terem);
+Számítógép és hálózati architektura 2$PGNAMNGI10$gy$Dr. Nagy Péter$SZE$08:50-09:30$(PC03 Terem); SZE:09:40-10:25 (PC03 Terem);
+Számítógép és hálózati architektura 2$PGNAMNGI08$gy$Török Péter$K$13:00-13:45$(PC03 Terem); K:13:50-14:30 (PC03 Terem);
+Számítógép és hálózati architektura 2$PENAMNGI03$ea$Nemes Teréz Erzsébet$K$12:10-12:50$(PC07 Terem);
+Számítógép és hálózati architektura 2$PENAMNGI08$ea$Török Péter$K$12:10-12:50$(PC03 Terem);
+Számítógép és hálózati architektura 2$PGNAMNGI07$gy$Török Péter$H$08:50-09:30$(PC07 Terem); H:09:40-10:25 (PC07 Terem);
+Számítógép és hálózati architektura 2$PENAMNGI07$ea$Török Péter$H$08:00-08:45$(PC07 Terem);
+Számítógép és hálózati architektura 2$PGNAMNGI02$gy$Nemes Teréz Erzsébet$CS$11:20-12:05$(PC07 Terem); CS:12:10-12:50 (PC07 Terem);
+Számítógép és hálózati architektura 2$PENAMNGI02$ea$Nemes Teréz Erzsébet$CS$10:30-11:10$(PC07 Terem);
+Számítógép és hálózati architektura 2$PGNAMNGI01$gy$Dr. Nagy Péter$CS$08:50-09:30$(PC07 Terem); CS:09:40-10:25 (PC07 Terem);
+Számítógép és hálózati architektura 2$PENAMNGI01$ea$Dr. Nagy Péter$CS$08:00-08:45$(PC07 Terem);
